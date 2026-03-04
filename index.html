@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md Khayrul Hassan Khan | Backend Developer & Competitive Programmer</title>
+  <meta name="description"
+    content="Portfolio of Md Khayrul Hassan Khan — Backend Developer and Competitive Programmer skilled in Node.js, Express.js, MongoDB, and algorithms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Canvas for particles -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Background orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;Khayrul Hassan Khan /&gt;</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle nav">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#cp">CP</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-left" data-aos="fade-right">
+        <div class="hero-badge"><span class="badge-dot"></span> Open to Opportunities</div>
+        <h1 class="hero-name">Md Khayrul<br><span class="gradient-text">Hassan Khan</span></h1>
+        <div class="hero-title-wrapper">
+          <span class="hero-title-prefix">&gt;_</span>
+          <span class="hero-typed" id="typedText"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-intro">
+          Computer Science graduate with strong backend development skills in <span class="highlight">Node.js</span>,
+          <span class="highlight">Express.js</span>, and <span class="highlight">MongoDB</span>. Passionate about
+          building scalable backend systems and solving complex algorithmic problems through competitive programming.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+          <a href="#" class="btn btn-secondary" id="resumeBtn"><i class="fas fa-download"></i> Download CV</a>
+          <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Tofsir7" target="_blank" class="social-icon" aria-label="GitHub"><i
+              class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/khayrul-hassan-khan-4559a9214" target="_blank" class="social-icon"
+            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:khtofsir919@gmail.com" class="social-icon" aria-label="Email"><i
+              class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-right" data-aos="fade-left">
+        <div class="profile-wrapper">
+          <div class="profile-ring ring-1"></div>
+          <div class="profile-ring ring-2"></div>
+          <div class="profile-glow"></div>
+          <div class="profile-img-container">
+            <img src="images/profilePicture.webp" alt="Md Khayrul Hassan Khan"
+              style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+          </div>
+          <div class="floating-badge badge-node"><i class="fab fa-node-js"></i> Node.js</div>
+          <div class="floating-badge badge-cp"><i class="fas fa-trophy"></i> CP</div>
+          <div class="floating-badge badge-mongo"><i class="fas fa-database"></i> MongoDB</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"></span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="about-icon"><i class="fas fa-server"></i></div>
+          <h3>Backend Developer</h3>
+          <p>Computer Science and Engineering graduate with strong backend development experience using Node.js,
+            Express.js, and MongoDB. I specialize in building RESTful APIs, implementing authentication systems, and
+            architecting scalable server-side applications.</p>
+        </div>
+        <div class="about-card glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="about-icon"><i class="fas fa-code"></i></div>
+          <h3>Competitive Programmer</h3>
+          <p>Experienced competitive programmer with strong knowledge of Data Structures and Algorithms. Actively
+            participated in ICPC, NCPC, and national level programming contests, achieving top rankings among university
+            participants.</p>
+        </div>
+        <div class="about-card glass-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="about-icon"><i class="fas fa-users"></i></div>
+          <h3>Community Leader</h3>
+          <p>Currently serving as President of the Competitive Programmer's Union, leading programming activities,
+            organizing contests, and mentoring junior programmers to grow the competitive programming culture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"></span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+      </div>
+
+      <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="skills-cat-title"><i class="fas fa-terminal"></i> Languages</h3>
+        <div class="skills-grid">
+          <div class="skill-card glass-card">
+            <div class="skill-icon lang-c"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/c/c-original.svg" alt="C" /></div>
+            <span>C</span>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon lang-cpp"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/cplusplus/cplusplus-original.svg"
+                alt="C++" /></div><span>C++</span>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon lang-cs"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/csharp/csharp-original.svg" alt="C#" />
+            </div><span>C#</span>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon lang-js"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/javascript/javascript-original.svg"
+                alt="JS" /></div><span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category" data-aos="fade-up" data-aos-delay="150">
+        <h3 class="skills-cat-title"><i class="fas fa-server"></i> Backend &amp; Database</h3>
+        <div class="skills-grid">
+          <div class="skill-card glass-card">
+            <div class="skill-icon skill-node"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/nodejs/nodejs-original.svg"
+                alt="Node.js" /></div><span>Node.js</span>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon skill-express"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/express/express-original.svg"
+                alt="Express.js" style="filter:invert(1) brightness(1.5);" /></div><span>Express.js</span>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon mongo"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB" /></div><span>MongoDB</span>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon sql"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+                alt="SQL" />
+            </div><span>SQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="skills-cat-title"><i class="fas fa-tools"></i> Tools &amp; Core CS</h3>
+        <div class="skills-grid">
+          <div class="skill-card glass-card">
+            <div class="skill-icon"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/git/git-original.svg" alt="Git" /></div>
+            <span>Git</span>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon skill-github"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/github/github-original.svg" alt="GitHub"
+                style="filter:invert(1) brightness(2);" /></div><span>GitHub</span>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon postman"><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                alt="Postman" /></div><span>Postman</span>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon dsa"><i class="fas fa-project-diagram"></i></div><span>DSA</span>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon algo"><i class="fas fa-wave-square"></i></div><span>Algorithms</span>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon oop"><i class="fas fa-cubes"></i></div><span>OOP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETITIVE PROGRAMMING -->
+  <section id="cp">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"></span>
+        <h2 class="section-title">CP <span class="gradient-text">Achievements</span></h2>
+      </div>
+
+      <!-- Profiles -->
+      <div class="cp-profiles" data-aos="fade-up" data-aos-delay="100">
+        <div class="cp-profile-card glass-card">
+          <div class="cp-platform-logo cf">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v11/icons/codeforces.svg" alt="Codeforces"
+              class="platform-logo-img" style="filter: invert(1) brightness(2);" />
+          </div>
+          <div class="cp-profile-info">
+            <h4>Codeforces</h4>
+            <div class="cp-rating pupil">1368</div>
+            <span class="cp-rank-label">Pupil</span>
+          </div>
+        </div>
+        <div class="cp-profile-card glass-card">
+          <div class="cp-platform-logo cc">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v11/icons/codechef.svg" alt="CodeChef"
+              class="platform-logo-img" style="filter: invert(1) brightness(2);" />
+          </div>
+          <div class="cp-profile-info">
+            <h4>CodeChef</h4>
+            <div class="cp-rating star3">1657</div>
+            <span class="cp-rank-label">3★ Star</span>
+          </div>
+        </div>
+        <div class="cp-profile-card glass-card">
+          <div class="cp-platform-logo toph">
+            <img src="https://toph.co/favicon.ico" alt="Toph" class="platform-logo-img" />
+          </div>
+          <div class="cp-profile-info">
+            <h4>Toph</h4>
+            <div class="cp-rating">1318</div>
+            <span class="cp-rank-label">Rated</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contest Achievements -->
+      <h3 class="sub-section-title" data-aos="fade-up"><i class="fas fa-trophy"></i> Contest Achievements</h3>
+      <div class="contests-grid">
+
+        <div class="contest-card glass-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="contest-badge icpc"><i class="fas fa-globe-asia"></i></div>
+          <div class="contest-info">
+            <h4>ICPC Dhaka Regional 2025 <span class="tag-onsite">Onsite</span></h4>
+            <div class="contest-rank"><i class="fas fa-hashtag"></i> Rank <strong>213</strong></div>
+            <p>International Collegiate Programming Contest – Asia Dhaka Regional Site 2025.</p>
+            <a href="https://bapsoj.org/contests/icpc-dhaka-onsite-2025/standings" target="_blank" class="btn-link"><i
+                class="fas fa-external-link-alt"></i> View Leaderboard</a>
+          </div>
+        </div>
+
+        <div class="contest-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="contest-badge icpc"><i class="fas fa-laptop-code"></i></div>
+          <div class="contest-info">
+            <h4>ICPC Dhaka 2025 Online Preliminary</h4>
+            <div class="contest-rank"><i class="fas fa-hashtag"></i> Rank <strong>159</strong></div>
+            <p>Online preliminary round for ICPC Asia Dhaka Regional 2025.</p>
+            <a href="https://bapsoj.org/contests/icpc-dhaka-2025-online-preliminary/standings" target="_blank"
+              class="btn-link"><i class="fas fa-external-link-alt"></i> View Leaderboard</a>
+          </div>
+        </div>
+
+        <div class="contest-card glass-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="contest-badge fest"><i class="fas fa-medal"></i></div>
+          <div class="contest-info">
+            <h4>Ismail Al-Jazari Science Fest 2025 <span class="tag-onsite">Onsite</span></h4>
+            <div class="contest-rank"><i class="fas fa-hashtag"></i> Rank <strong>4th Place</strong></div>
+            <p>Programming competition at the Ismail Al-Jazari Science Festival 2025.</p>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7331165350845132800/" target="_blank"
+              class="btn-link"><i class="fas fa-external-link-alt"></i> Verify Achievement</a>
+          </div>
+        </div>
+
+        <div class="contest-card glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="contest-badge icpc"><i class="fas fa-globe"></i></div>
+          <div class="contest-info">
+            <h4>ICPC Asia Dhaka Regional Preliminary 2024</h4>
+            <div class="contest-rank"><i class="fas fa-hashtag"></i> Rank <strong>229</strong> <span
+                class="rank-note">Top 8% · 3rd in IU</span></div>
+            <p>Asia Dhaka Regional Preliminary 2024 – ranked in top 8%, 3rd in Islamic University.</p>
+            <a href="https://icpc.global/private/person/589542/ICPCID" target="_blank" class="btn-link"><i
+                class="fas fa-external-link-alt"></i> View Leaderboard</a>
+          </div>
+        </div>
+
+        <div class="contest-card glass-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="contest-badge univ"><i class="fas fa-university"></i></div>
+          <div class="contest-info">
+            <h4>IU Intra University Contest 2024 <span class="tag-onsite">Onsite</span></h4>
+            <div class="contest-rank"><i class="fas fa-hashtag"></i> Rank <strong>4</strong></div>
+            <p>Islamic University internal programming contest 2024.</p>
+            <a href="https://toph.co/contests/training/vvwcp3g/standings" target="_blank" class="btn-link"><i
+                class="fas fa-external-link-alt"></i> View Leaderboard</a>
+          </div>
+        </div>
+
+        <div class="contest-card glass-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="contest-badge ncpc"><i class="fas fa-flag"></i></div>
+          <div class="contest-info">
+            <h4>NCPC 2023 <span class="tag-onsite">Onsite</span></h4>
+            <div class="contest-rank"><i class="fas fa-hashtag"></i> Rank <strong>120</strong></div>
+            <p>National Collegiate Programming Contest 2023 – onsite round at JU.</p>
+            <a href="https://bapsoj.org/contests/ncpc-preliminary-ju-2023/standings" target="_blank" class="btn-link"><i
+                class="fas fa-external-link-alt"></i> View Leaderboard</a>
+          </div>
+        </div>
+
+        <div class="contest-card glass-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="contest-badge iupc"><i class="fas fa-code-branch"></i></div>
+          <div class="contest-info">
+            <h4>AUST IUPC 2022 <span class="tag-onsite">Onsite</span></h4>
+            <div class="contest-rank"><i class="fas fa-hashtag"></i> Rank <strong>88</strong></div>
+            <p>Inter University Programming Contest hosted by Ahsanullah University of Science and Technology.</p>
+            <a href="https://web.archive.org/web/20221201173754/https://algo.codemarshal.org/contests/aust-2022/standings"
+              target="_blank" class="btn-link"><i class="fas fa-external-link-alt"></i> View Leaderboard</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"></span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card glass-card featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Tofsir7/Genz-Web" target="_blank" aria-label="GitHub Repo"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://genzit.onrender.com/" target="_blank" aria-label="Live Demo"><i
+                  class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-featured-badge">⭐ Featured</div>
+          <h3 class="project-title">Student Management System</h3>
+          <p class="project-desc">A full-stack web application built using Node.js, Express.js, and MongoDB following
+            MVC architecture — designed to manage students, roles, and academic data efficiently.</p>
+          <ul class="project-features">
+            <li><i class="fas fa-check-circle"></i> RESTful API Architecture</li>
+            <li><i class="fas fa-check-circle"></i> JWT Authentication</li>
+            <li><i class="fas fa-check-circle"></i> bcrypt Password Security</li>
+            <li><i class="fas fa-check-circle"></i> Role Based Access Control (RBAC)</li>
+            <li><i class="fas fa-check-circle"></i> Password Reset via Nodemailer</li>
+            <li><i class="fas fa-check-circle"></i> Google Gemini AI Chatbot</li>
+          </ul>
+          <div class="project-tech">
+            <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span><span>Gemini AI</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/Tofsir7/Genz-Web" target="_blank" class="btn btn-secondary btn-sm"><i
+                class="fab fa-github"></i> GitHub</a>
+            <a href="https://genzit.onrender.com/" target="_blank" class="btn btn-primary btn-sm"><i
+                class="fas fa-rocket"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"></span>
+        <h2 class="section-title">Contest <span class="gradient-text">Gallery</span></h2>
+        <p class="section-desc">Snapshots from contests, events, and programming club activities.</p>
+      </div>
+      <div class="gallery-grid">
+
+        <div class="gallery-card glass-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="gallery-img-wrapper">
+            <img class="gallery-real" src="images/ICPC2025-1.jpeg" alt="ICPC Dhaka Regional 2025" />
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-tag"><i class="fas fa-globe-asia"></i> ICPC</span>
+            <h4>ICPC Dhaka Regional 2025</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-img-wrapper">
+            <img class="gallery-real" src="images/Ismail%20Al-Jazari%20Science%20Fest%202025.jpeg"
+              alt="Ismail Al-Jazari Science Fest 2025" />
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-tag"><i class="fas fa-medal"></i> Science Fest</span>
+            <h4>Ismail Al-Jazari Science Fest 2025</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card glass-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="gallery-img-wrapper">
+            <img class="gallery-real" src="images/NCPC2023.jpeg" alt="NCPC 2023" />
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-tag"><i class="fas fa-flag"></i> NCPC</span>
+            <h4>NCPC 2023</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery-img-wrapper">
+            <img class="gallery-real" src="images/ICPC2025-2.jpeg" alt="ICPC Dhaka Regional 2025" />
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-tag"><i class="fas fa-globe-asia"></i> ICPC</span>
+            <h4>ICPC Dhaka Regional 2025 (Team)</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card glass-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="gallery-img-wrapper">
+            <img class="gallery-real" src="images/CP%20Union%20Workshop.jpg" alt="CP Union Workshop" />
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-tag"><i class="fas fa-users"></i> Club</span>
+            <h4>CP Union Workshop</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card glass-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="gallery-img-wrapper">
+            <img class="gallery-real" src="images/AUST%20IUPC%202022.jpeg" alt="AUST IUPC 2022" />
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-tag"><i class="fas fa-code-branch"></i> IUPC</span>
+            <h4>AUST IUPC 2022</h4>
+          </div>
+        </div>
+
+      </div>
+      <!-- <p class="gallery-hint" data-aos="fade-up" data-aos-delay="350"><i class="fas fa-info-circle"></i> Replace
+        placeholder images by adding <code>src</code> attributes to the <code>&lt;img&gt;</code> tags in the HTML. You
+        can also use <code>object-fit: cover</code> for any aspect ratio.</p> -->
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag"></span>
+        <h2 class="section-title">Leadership <span class="gradient-text">Roles</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot current"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div class="timeline-icon president"><i class="fas fa-crown"></i></div>
+              <div>
+                <h3>President</h3>
+                <h4>Competitive Programmer's Union</h4>
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> Jan 2026 – Present</span>
+              </div>
+              <span class="timeline-status-badge">Current</span>
+            </div>
+            <ul class="timeline-duties">
+              <li><i class="fas fa-chevron-right"></i> Leading programming club activities and strategic planning</li>
+              <li><i class="fas fa-chevron-right"></i> Organizing programming contests at university level</li>
+              <li><i class="fas fa-chevron-right"></i> Hosting technical workshops and training sessions</li>
+              <li><i class="fas fa-chevron-right"></i> Managing and mentoring club members</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div class="timeline-icon ags"><i class="fas fa-user-tie"></i></div>
+              <div>
+                <h3>Assistant General Secretary</h3>
+                <h4>Competitive Programmer's Union</h4>
+                <span class="timeline-date"><i class="far fa-calendar-alt"></i> Jan 2025 – Dec 2025</span>
+              </div>
+            </div>
+            <ul class="timeline-duties">
+              <li><i class="fas fa-chevron-right"></i> Organizing programming events and competitions</li>
+              <li><i class="fas fa-chevron-right"></i> Managing club coordination and logistics</li>
+              <li><i class="fas fa-chevron-right"></i> Helping members collaborate effectively</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// education</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+      <div class="edu-card glass-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="edu-icon"><i class="fas fa-university"></i></div>
+        <div class="edu-info">
+          <h3>Islamic University, Bangladesh</h3>
+          <h4>BSc in Computer Science &amp; Engineering</h4>
+          <div class="edu-meta">
+            <span><i class="far fa-calendar-alt"></i> 2020 – 2025</span>
+            <span class="cgpa-badge"><i class="fas fa-star"></i> CGPA: 3.55 / 4.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">// get_in_touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-desc">Feel free to reach out for collaborations, opportunities, or just a friendly chat!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+          <a href="mailto:khtofsir919@gmail.com" class="contact-link-card glass-card">
+            <div class="contact-link-icon email"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>khtofsir919@gmail.com</p>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="https://github.com/Tofsir7" target="_blank" class="contact-link-card glass-card">
+            <div class="contact-link-icon github"><i class="fab fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <p>github.com/Tofsir7</p>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/khayrul-hassan-khan-4559a9214" target="_blank"
+            class="contact-link-card glass-card">
+            <div class="contact-link-icon linkedin"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>khayrul-hassan-khan</p>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+        </div>
+        <div class="contact-form-wrapper" data-aos="fade-left" data-aos-delay="200">
+          <form class="contact-form glass-card" id="contactForm">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="formMsg" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">&lt;Khayrul /&gt;</div>
+      <p class="footer-text">Crafted with <span style="color:#e05c5c">♥</span> by Md Khayrul Hassan Khan</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Tofsir7" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/khayrul-hassan-khan-4559a9214" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="mailto:khtofsir919@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
